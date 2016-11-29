@@ -1,6 +1,91 @@
 * {
     outline: 1px solid red;
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
+
+
+/* HEADER */
+
+.encabezado {
+	background-image: url("../image/large.jpg");
+	background-position: center;
+    background-position-y: 0%;
+    background-size: cover;
+    position: relative;
+}
+.navbar-brand {
+	color: #01a2e2;
+}
+
+.list-inline {
+    color: white;
+    font-weight: bold;
+}
+
+header, ul, li, a {
+	color: white;
+}
+
+.encabezado:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(80, 98, 119, 0.53);
+}
+
+/* titulo principal */
+
+.frase {
+	background-color: transparent;
+	position: relative;
+	padding: 18% 18% 5%;
+}
+
+.h2 {
+	font-size: 45px;
+    color: white;
+    text-align: center;
+}
+
+/* franja */
+
+.header-banner {
+    background-color: rgba(34, 131, 251, 0.85);
+    color: white;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+}
+
+.header-banner .btn {
+	background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4%;
+    font-size: 22px;
+    margin: 4% 0% 4% 2%;
+}
+
+.header-banner .gratis {
+	padding-left: 30%;
+	line-height: 0.5;
+}
+
+
+/* services */
+.services .row {
+	padding: 8% 5% 1% 5%;
+}
+
+h1 {
+	color: #57B5FD;
+	margin-bottom: 5%;
+}
+
 
 .icon-container {
     width: 150px;
@@ -12,4 +97,152 @@
     box-shadow: -2px 2px 10px rgba (0,0,0,0.6);
     border-radius: 200px;
     color: skyblue;
+}
+
+
+.services .icon {
+	font-size: 40px;
+	color: #49A6EE;
+}
+
+.services .icon-container {
+	border-radius: 50%;
+    padding: 15%;
+    background-color: transparent;
+	-webkit-box-shadow: -3px 4px 11px -2px rgba(9, 31, 58, 0.5);
+	margin-bottom: 5%;
+	margin-bottom: 15%;
+}
+
+.services h3 {
+	color: #061A53;
+}
+
+.services {
+	padding-bottom: 5%;
+}
+
+.separador {
+	position: relative;
+    top: 68px;
+}
+
+
+ 
+
+/* información*/
+
+.logo {
+	width: 50%;
+}
+
+.flecha {
+	padding: 2% 40%;
+}
+
+.video {
+	width: 100%;
+}
+
+.info .ejemplo {
+	padding:7% 0% 7% 0%;
+	border-bottom: 1px solid #b6cdf5;
+}
+
+.obtener {
+	padding: 0%;
+	position: relative;
+}
+
+.imagen-obtener {
+	background-image: url("../image/sec-2.jpg");
+	background-position: center;
+    background-position-x: 1%;
+    background-size: cover;
+    position: relative;
+    height: 460px;
+}
+
+.imagen-obtener:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(60, 76, 80, 0.65);
+}
+
+.steps {
+	padding-left: 4%;
+}
+
+.steps h4 {
+	color: #49A6EE;
+	font-size: 15px;
+	padding-top: 4%;
+}
+
+.iconos-medio {
+	position: absolute;
+    line-height: 11;
+    left: 47%;
+    right: 50%;	
+}
+
+.info .icono {
+	background-color: #43b3ff;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 13px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* porque */
+
+.steps .usar,
+ .porque .usar  {
+	margin-left: 4%;
+	line-height: 30px;
+}
+
+.ban {
+	width: 100%;
+}
+
+.porque {
+	padding-top: 5%;
+}
+
+.porque .linea {
+	margin-top: 10%;
+}
+
+/* footer contacto */
+
+footer {
+	background-color: #101a29;
+	padding: 3% 0% 2%;
+	color: white;
+	line-height: 2.5;
+}
+
+.icon {
+	font-size: 35px;
+	padding-left: 5%;
+}
+
+footer a:hover,
+footer a:focus {
+	text-decoration: none;
 }
