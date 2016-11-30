@@ -228,6 +228,7 @@ h2 {
 	margin-top: 10%;
 }
 
+
 /* footer contacto */
 
 footer {
@@ -240,6 +241,7 @@ footer {
 .icon {
 	font-size: 35px;
 	padding-left: 5%;
+    color: skyblue;
 }
 
 footer a:hover,

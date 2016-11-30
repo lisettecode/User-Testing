@@ -1,0 +1,60 @@
+body{
+	background-image: url("../image/large.jpg");
+ 	background-size: cover;
+}
+ 
+.container-fluid {
+    top: 130px;
+ 	position: relative;	
+}
+  
+#formulario {	
+ 	background: white;
+    border-top: 5px solid skyblue;
+ 	margin: 0 auto;
+    width: 80%;
+ 	height: 420px;
+}
+  
+span{
+  	color: red;
+}
+
+.nombre, .email, .url {
+ 	margin-left: 160px; 
+}
+ 
+.nombre1{
+    width: 310px;
+ 	margin-left: 70px;	 
+}
+
+.email1{
+    width: 310px; 
+ 	margin-left: 90px;
+}
+
+.url1{
+    padding-bottom: 75px;
+    width: 310px;
+ 	margin-left: 6px;	 
+}
+ 
+.enviar{
+    margin-top: 12px;
+ 	margin-left: 360px;	
+}
+ 
+button {
+    background: #6ba9db;
+    margin-left: 310px;
+ 	border: 0px;
+ 	border-radius: 5px;
+ 	color: white;
+} 
+
+.final .by p, 
+.report p{
+    padding-top: 100px;
+    text-align: center;
+}
