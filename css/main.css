@@ -1,68 +1,75 @@
-/* {
+/*{
     outline: 1px solid red;
     padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-}/
+}*/
 
+
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
 /* HEADER */
 
-.encabezado {
+.hero {
 	background-image: url("../image/large.jpg");
-	background-position: center;
-    background-position-y: 0%;
     background-size: cover;
+	background-position: center;
     position: relative;
 }
 .navbar-brand {
-	color: #01a2e2;
+	color: #01a2ab;
 }
 
-.list-inline {
-    color: white;
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: rgba(15, 55, 143, 0.85);
     font-weight: bold;
+    color: white;
+    text-decoration: none;
+
 }
 
-header, ul, li, a {
+header a,strong {
 	color: white;
 }
 
-.encabezado:before{
-	content: "";
-	display: block;
-	position: absolute;
+.hero:before{
+    position: absolute;
+	background: rgba(80, 98, 119, 0.53);
 	top: 0;
-	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(80, 98, 119, 0.53);
+	display: block;
+	bottom: 0;
+	content: "";
 }
 
-/* hero */
+/* BANNER */
 
-.frase {
+.banner {
 	background-color: transparent;
 	position: relative;
-	padding: 18% 18% 5%;
-}
-
-.h2 {
-	font-size: 45px;
+	padding: 17% 17% 5%;
     color: white;
-    text-align: center;
 }
 
-/* franja */
+.jumbotron h1 {
+	font-size: 40px;
+}
 
-.header-banner {
+/* FRANJA */
+
+.franja {
     background-color: rgba(34, 131, 251, 0.85);
     color: white;
     padding-top: 1.5%;
     padding-bottom: 1%;
 }
 
-.header-banner .btn {
+.franja .btn {
 	background-color: transparent;
     border: 1px solid white;
     border-radius: 4%;
@@ -70,115 +77,93 @@ header, ul, li, a {
     margin: 4% 0% 4% 2%;
 }
 
-.header-banner .gratis {
+.franja .gratis {
 	padding-left: 30%;
 	line-height: 0.5;
 }
 
 
-/* servicios */
+/* SERVICES */
 
-
-.icon-container {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    line-height: 150px;
-    font-size: 60px;
-    text-align: center;
-    box-shadow: -2px 2px 10px rgba (0,0,0,0.6);
-    border-radius: 200px;
-    color: skyblue;
-}
-
-
-.servicios .row {
+#services .row {
 	padding: 8% 5% 1% 5%;
 }
 
 h2 {
-	color: #57B5FD;
-	margin-bottom: 5%;
+    margin-bottom: 6%;
+	color: #57B5CD;
 }
 
-.servicios .icon {
-	font-size: 40px;
-	color: #49A6EE;
+#services .icon {
+	font-size: 42px;
+	color: #49A6DD;
 }
 
-.servicios .badge .icon-container {
-	border-radius: 50%;
-    padding: 15%;
+#services .badge {
     background-color: transparent;
-	-webkit-box-shadow: -3px 4px 11px -2px rgba(9, 31, 58, 0.5);
-	margin-bottom: 5%;
-	margin-bottom: 15%;
+    margin-bottom: 6%;
+	margin-bottom: 18%;
+	border-radius: 55%;
+    padding: 15%;
+	-webkit-box-shadow: -3px 4px 12px -2px rgba(8, 30, 55, 0.4);
 }
 
-.servicios h3 {
-	color: #061A53;
+#services h3 {
+	color: #061A43;
 }
 
-.servicios {
-	padding-bottom: 5%;
+#services {
+	padding-bottom: 6%;
 }
 
 .separador {
-	position: relative;
     top: 68px;
+	position: relative;
 }
 
-
-
-
-
-
-
-
-
-
-/* información */
+/* OBTENER */
 
 .logo {
 	width: 50%;
 }
 
 .flecha {
-	padding: 2% 40%;
+	padding: 2% 42%;
 }
 
 .video {
 	width: 100%;
 }
 
-.informacion .ejemplo {
+#obtener .uso {
+    border-bottom: 1px solid #b6cdd1;
 	padding:7% 0% 7% 0%;
-	border-bottom: 1px solid #b6cdf5;
 }
 
-.obtener {
+.buy {
+    position: relative;
 	padding: 0%;
-	position: relative;
 }
 
-.imagen-obtener {
+.image {
 	background-image: url("../image/sec-2.jpg");
-	background-position: center;
     background-position-x: 1%;
     background-size: cover;
+	background-position: center;
     position: relative;
-    height: 460px;
+    height: 450px;
 }
 
-.imagen-obtener:before{
-	content: "";
-	display: block;
+.image:before{
+    background: rgba(65, 75, 80, 0.64);
 	position: absolute;
 	top: 0;
 	bottom: 0;
+	content: "";
 	left: 0;
 	right: 0;
-	background: rgba(60, 76, 80, 0.65);
+    display: block;
+
 }
 
 .steps {
@@ -186,65 +171,64 @@ h2 {
 }
 
 .steps h4 {
-	color: #49A6EE;
-	font-size: 15px;
+    font-size: 16px;
 	padding-top: 4%;
+	color: #49A6DD;
 }
 
-.iconos-medio {
-	position: absolute;
+.content-icon {
+    position: absolute;
     line-height: 11;
-    left: 47%;
-    right: 50%;	
+    right: 51%;	
+    left: 46%;
 }
 
-.informacion .icono {
-	background-color: #43b3ff;
-    font-size: 30px;
+#obtener .icono {
+	background-color: #43b3CC;
     border-radius: 50%;
-    padding: 13px;
+    padding: 14px;
+    font-size: 33px;
     color: white;
 }
 
 
 
-/* article why */
+/* COMPRAR */
 
-.pasos ul li,
- #why ul li  {
+.steps ul li,
+ #comprar ul li  {
+    line-height: 35px;
 	margin-left: 4%;
-	line-height: 30px;
 }
 
-.banner {
+.hero {
 	width: 100%;
 }
 
-#why {
+#comprar {
 	padding-top: 5%;
 }
 
-#why .franja {
+#comprar .franja {
 	margin-top: 10%;
 }
 
-
-/* footer contacto */
+/* footer */
 
 footer {
-	background-color: #101a29;
-	padding: 3% 0% 2%;
-	color: white;
+    padding: 3% 0% 2%;
 	line-height: 2.5;
+	background-color: #101a25;
+	color: white;
 }
 
 .icon {
-	font-size: 35px;
-	padding-left: 5%;
-    color: skyblue;
+    padding-left: 5%;
+	font-size: 37px;
 }
 
 footer a:hover,
 footer a:focus {
 	text-decoration: none;
 }
+
